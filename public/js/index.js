@@ -36,7 +36,8 @@ function refreshRooms() {
   while (roomList.firstChild) {
     roomList.removeChild(roomList.firstChild);
   }
-  if (rooms.length == 0) { // If there is no rooms in rooms.json
+  if (rooms.length == 0) {
+    // If there is no rooms in rooms.json
     var p = document.createElement("p");
     p.innerHTML =
       "There are no available rooms right now. Feel free to create a new one!";
@@ -70,8 +71,6 @@ function refreshRooms() {
   roomList.style = "color=#000";
 }
 
-
-
 function askUsername() {
   var username = sessionStorage.getItem("username");
   if (username == undefined || username == "" || username == null) {
@@ -103,6 +102,7 @@ function createRoom() {
   var availableRooms = document.getElementsByClassName("room_radio");
   var maxPoints = document.getElementById("points").value;
   var nameIsAvailable = true;
+  //  check room name if available
   for (var i = 0; i < availableRooms.length; i++) {
     if (availableRooms[i].value == name) {
       nameIsAvailable = false;
@@ -111,9 +111,12 @@ function createRoom() {
   if (nameIsAvailable && name != "" && name != undefined) {
     sessionStorage.setItem("room", name);
     sessionStorage.setItem("maxPoints", maxPoints);
-    window.location.href = "playground";
+    window.location.href = "lobby";
   } else {
     window.alert("This room name is already taken");
   }
+}
+function startRoom() {
+  window.location.href = "../playground";
 }
 // --------------------------------

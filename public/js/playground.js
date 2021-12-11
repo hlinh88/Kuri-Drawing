@@ -381,9 +381,8 @@ function askUsername() {
   }
 }
 user = sessionStorage.getItem("username");
-if (user ==null){
+if (user == null) {
   document.getElementById("users").innerHTML = "Users";
-}else{
+} else {
   document.getElementById("users").innerHTML = user;
 }
-
