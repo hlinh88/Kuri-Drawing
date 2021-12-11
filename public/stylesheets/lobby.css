@@ -1,0 +1,39 @@
+body {
+    background: #eff4fb;
+    font-family: 'Montserrat', sans-serif;
+}
+h1, h2 {
+    text-align: -moz-center;
+    text-align: -webkit-center;
+    text-align: center;
+}
+
+h1 {
+    color: #094069;
+    padding-top: 20px;
+}
+
+h2 {
+    color: #0078d4;
+}
+
+.user-container {
+    margin: 60px auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.user {
+    width: 100px;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+    text-align: center;
+    padding: 0 40px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
