@@ -2,7 +2,7 @@
   box-sizing: border-box;
   /* font: inherit; */
   font-family: "Montserrat", sans-serif;
-  background-image: "public/images/background.png";
+  background-image: radial-gradient(#094069,#eff4fb);
   margin-left: auto;
   margin-right: auto;
   background-size: contain;
@@ -38,7 +38,7 @@ body {
   /* background: #8e59c0ef; */
   /* background-image: linear-gradient(#302d5f,#7a77a3); */
   /* background-image: radial-gradient(#302d5f,#09071a); */
-  background-image: url("/images/background.png");
+  background-image: radial-gradient(#094069,#eff4fb);
   background-size: 100%;
   font-size: 16px;
   line-height: 1.3;
@@ -73,7 +73,7 @@ body {
 }
 .generic_button:hover {
   cursor: pointer;
-  background-color: #393270;
+  background-color: #ffc0cb;
 }
 #join_button {
   padding: 10px 25px;
@@ -180,10 +180,10 @@ body {
     border-radius: 6px;
   }
   .generic_button:hover {
-    background: #393270;
+    background: #ffc0cb;
   }
 
   .generic_button:focus {
-    background: #393270;
+    background: #ffc0cb;
   }
 }
