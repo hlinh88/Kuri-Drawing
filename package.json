@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mohammedsafvan/scribble-it.git"
+    "url": "git+https://github.com/hlinh88/scribble-it"
   },
   "keywords": [
     "draw",
@@ -29,7 +29,7 @@
     "skribble.io"
   ],
   "bugs": {
-    "url": "https://github.com/mohammedsafvan/scribble-it/issues"
+    "url": "https://github.com/hlinh88/scribble-it"
   },
-  "homepage": "https://github.com/mohammedsafvan/scribble-it#readme"
+  "homepage": "https://github.com/hlinh88/scribble-it"
 }
