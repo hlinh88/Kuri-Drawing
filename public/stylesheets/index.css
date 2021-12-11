@@ -20,7 +20,7 @@ a:hover {
   text-decoration: underline;
 }
 a:visited {
-  color: #ffc0cb;
+  color: #30C4EB;
 }
 h1 {
   text-align: center;
@@ -76,7 +76,7 @@ body {
 }
 .generic_button:hover {
   cursor: pointer;
-  background-color: #ffc0cb;
+  background-color: #30C4EB;
 }
 #join_button {
   padding: 10px 25px;
@@ -190,10 +190,10 @@ body {
     border-radius: 6px;
   }
   .generic_button:hover {
-    background: #ffc0cb;
+    background: #30C4EB;
   }
 
   .generic_button:focus {
-    background: #ffc0cb;
+    background: #30C4EB;
   }
 }
