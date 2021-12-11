@@ -24,7 +24,7 @@ h1 {
 
 body {
   font-family: sans-serif;
-  background-image: radial-gradient(#094069,#eff4fb);
+  background-image: radial-gradient(#094069, #eff4fb);
   font-size: 16px;
   line-height: 1.3;
   position: relative;
@@ -77,8 +77,10 @@ body {
 
 #users {
   line-height: 21px;
-  font-size: x-large;
+  font-size: 30px;
   margin: 12px 6px;
+  text-align: center;
+  font-weight: 700;
 }
 
 .pAboveCanvas {
@@ -90,7 +92,8 @@ body {
   line-height: 21px;
   float: left;
   margin: 12px 0;
-  font-size: x-large;
+  font-size: 30px;
+  font-weight: 700;
 }
 #timer {
   min-height: 16px;
@@ -145,11 +148,11 @@ td {
   float: left;
 }
 
-p{
-color: white;
+p {
+  color: white;
 }
 
-#chat_text > p{
+#chat_text > p {
   color: black;
 }
 
@@ -280,7 +283,7 @@ color: white;
   width: 10%;
   height: 30px;
 }
-#replay{
+#replay {
   float: right;
   min-width: 55px;
   width: 10%;
