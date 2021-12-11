@@ -113,6 +113,12 @@ body {
   padding: 10px;
   border-radius: 10px;
 }
+
+#introduction {
+  margin: 30px 100px 0;
+}
+
+
 #main {
   display: inline-block;
   text-align: center;
@@ -158,8 +164,9 @@ body {
     margin-left: 5px;
     margin-right: 5px;
   }
-  #sidebar_left {
+  #introduction {
     order: 1;
+    margin: 30px 100px 0;
   }
   #main {
     order: 2;
