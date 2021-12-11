@@ -77,15 +77,16 @@ body {
 
 #users {
   line-height: 21px;
-  font-size: 30px;
+  font-size: 20px;
   margin: 12px 6px;
-  text-align: center;
   font-weight: 700;
 }
 
 .pAboveCanvas {
-  display: inline;
+  display: flex;
   overflow: hidden;
+  justify-content: space-between;
+  margin: 0 30px;
 }
 #wordToDraw {
   min-height: 21px;
