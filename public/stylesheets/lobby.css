@@ -1,0 +1,96 @@
+body {
+    background: #eff4fb;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2 {
+    text-align: -moz-center;
+    text-align: -webkit-center;
+    text-align: center;
+}
+
+h1 {
+    color: #094069;
+    padding: 40px 0 10px;
+}
+
+h2 {
+    color: #0078d4;
+}
+
+h4 {
+    margin: 10px 0;
+}
+
+.user-container {
+    margin: 70px auto 40px;
+    width: 80%;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.user {
+    width: 100px;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+    text-align: center;
+    padding: 0 40px 20px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.buttons {
+    display: flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.start-btn, .leave-btn {
+    padding: 15px 30px;
+    border-radius: 20px;
+    margin: 0 40px;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    transform: scale(0.95);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.start-btn {
+    background: #0078d4;
+}
+
+.leave-btn {
+    background: #000000;
+}
+
+.start-btn:hover, .leave-btn:hover {
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.start-btn:hover {
+    background: #094069;
+}
+
+.leave-btn:hover {
+    background: #333333;
+}
+
+.start-btn:active, .leave-btn:active {
+    transform: scale(0.95);
+}
