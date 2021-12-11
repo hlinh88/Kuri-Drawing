@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="/stylesheets/index.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap"
       rel="stylesheet"
     />
@@ -14,24 +18,24 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/favicon/apple-touch-icon.png"
+      href="/favicon/favicon.ico"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/favicon/favicon-32x32.png"
+      href="/favicon/favicon.ico"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/favicon/favicon-16x16.png"
+      href="/favicon/favicon.ico"
     />
     <link rel="manifest" href="/favicon/site.webmanifest" />
     <link
       rel="mask-icon"
-      href="/favicon/safari-pinned-tab.svg"
+      href="/favicon/favicon.ico"
       color="#5bbad5"
     />
     <link rel="shortcut icon" href="/favicon/favicon.ico" />
@@ -41,8 +45,9 @@
   </head>
 
   <body>
-  <div class="wrapper_item" id="introduction">
-    <div class="textbox">
+  <div class="container">
+  <div id="introduction" class="textbox">
+    <div class="intro-text">
       <h2>WELCOME TO KURI DRAWING</h2>
       <p>
         Create a new room or join a room below to enjoy our bonding game and have a fun time
@@ -63,9 +68,11 @@
         </li>
       </ul>
     </div>
+    <div class="kuri-logo">
+      <img src="images/kuri.ico" alt="Kuri logo">
+    </div>
   </div>
   
-    <div class="wrapper">
       <div class="wrapper_item" id="main">
         <div class="textbox" id="middle">
           <button
@@ -93,7 +100,7 @@
       
       <div class="wrapper_item" id="sidebar_right">
         <div class="textbox">
-          <p>Create a room!</p>
+          <p style="text-align: center">Create a room!</p>
           <p>
             Name: <input type="text" id="create_room_input" />
             <input
@@ -116,7 +123,8 @@
           </select>
         </div>
       </div>
-    </div>
+  </div>
+  
     <script src="/js/index.js"></script>
   </body>
 </html>

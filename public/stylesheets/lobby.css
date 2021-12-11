@@ -1,5 +1,5 @@
 body {
-    background: #eff4fb;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../images/background.jpg');
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -10,12 +10,12 @@ h1, h2 {
 }
 
 h1 {
-    color: #094069;
+    color: #010422;
     padding: 40px 0 10px;
 }
 
 h2 {
-    color: #0078d4;
+    color: #0178d4;
 }
 
 h4 {
@@ -23,7 +23,7 @@ h4 {
 }
 
 .user-container {
-    margin: 70px auto 40px;
+    margin: 40px auto 20px;
     width: 80%;
     display: -moz-flex;
     display: -ms-flex;
@@ -55,13 +55,13 @@ img {
     display: -webkit-flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .start-btn, .leave-btn {
     padding: 15px 30px;
     border-radius: 20px;
-    margin: 0 40px;
+    margin: 0 40px 30px;
     outline: none;
     border: none;
     color: #ffffff;
