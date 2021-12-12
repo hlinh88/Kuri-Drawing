@@ -3,7 +3,7 @@
 ![Kuri_Drawing.jpg](public/images/Kuri_Drawing.jpg)
 Kuri Drawing based on a real-time draw-and-guess game Scribble it!
 
-+ A multiplayer game with socket.io, nodejs
++ A multiplayer game with socket.io, nodejs, Reactjs
 + Create a new room or join a room below to enjoy our bonding game and have a fun time with your colleagues!
 + One player tries to draw an image of a word related to our company
 + Other players guess the word and type it out
