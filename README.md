@@ -1,4 +1,5 @@
 # KURI DRAWING
+![Kuri_Drawing.jpg](../public/images/Kuri_Drawing.jpg)
 Kuri Drawing based on a real-time draw-and-guess game Scribble it!
 
 
