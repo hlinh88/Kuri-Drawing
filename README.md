@@ -49,7 +49,7 @@ again the command line and be happy.
 
 ## Install
 
-    $ git clone https://github.com/hlinh88/scribble-it.git
+    $ git clone https://github.com/hlinh88/kuri-drawing.git
     $ cd PROJECT_TITLE
     $ npm install 
 
