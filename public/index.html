@@ -1,130 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/stylesheets/index.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/stylesheets/index.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Montserrat"
+            rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap"
+            rel="stylesheet"
     />
     <script src="/socket.io/socket.io.js"></script>
     <title>Kuri Drawing</title>
     <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/favicon/favicon.ico"
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/favicon/favicon.ico"
     />
     <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/favicon/favicon.ico"
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon/favicon.ico"
     />
     <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/favicon/favicon.ico"
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon/favicon.ico"
     />
-    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="manifest" href="/favicon/site.webmanifest"/>
     <link
-      rel="mask-icon"
-      href="/favicon/favicon.ico"
-      color="#5bbad5"
+            rel="mask-icon"
+            href="/favicon/favicon.ico"
+            color="#5bbad5"
     />
-    <link rel="shortcut icon" href="/favicon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#2d89ef" />
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico"/>
+    <meta name="msapplication-TileColor" content="#2d89ef"/>
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml"/>
     <!-- <meta name="theme-color" content="#ffffff" /> -->
-  </head>
+</head>
 
-  <body>
-  <div class="container">
-  <div id="introduction" class="textbox">
-    <div class="intro-text">
-      <h2>WELCOME TO KURI DRAWING</h2>
-      <p>
-        Create a new room or join a room below to enjoy our bonding game and have a fun time
-        with your colleagues!
-      </p>
-      <p>
-        Kuri Drawing based on a real-time draw-and-guess game Scribble it!
-      </p>
-      <ul>
-        <li>One player tries to draw an image of a word related to our company</li>
-        <li>Other players guess the word and type it out</li>
-        <li>
-          A new word will be chosen when the time runs out for each round, so no
-          points will be given after this period
-        </li>
-        <li>
-          The minimum number of players in a room should be four
-        </li>
-      </ul>
+<body>
+<div class="container">
+    <div id="introduction" class="textbox">
+        <div class="intro-text">
+            <h2>WELCOME TO KURI DRAWING</h2>
+            <p>
+                Create a new room or join a room below to enjoy our bonding game and have a fun time
+                with your colleagues!
+            </p>
+            <p>
+                Kuri Drawing based on a real-time draw-and-guess game Scribble it!
+            </p>
+            <ul>
+                <li>One player tries to draw an image of a word related to our company</li>
+                <li>Other players guess the word and type it out</li>
+                <li>
+                    A new word will be chosen when the time runs out for each round, so no
+                    points will be given after this period
+                </li>
+                <li>
+                    The minimum number of players in a room should be four
+                </li>
+            </ul>
+        </div>
+        <div class="kuri-logo">
+            <img src="images/kuri.ico" alt="Kuri logo">
+        </div>
     </div>
-    <div class="kuri-logo">
-      <img src="images/kuri.ico" alt="Kuri logo">
-    </div>
-  </div>
-  
-      <div class="wrapper_item" id="main">
+
+    <div class="wrapper_item" id="main">
         <div class="textbox" id="middle">
-          <button
-            type="button"
-            name="button"
-            id="refresh"
-            class="generic_button"
-            onclick="refreshRooms()"
-          >
-            Refresh
-          </button>
-          <div id="room_list"></div>
+            <button
+                    type="button"
+                    name="button"
+                    id="refresh"
+                    class="generic_button"
+                    onclick="refreshRooms()"
+            >
+                Refresh
+            </button>
+            <div id="room_list"></div>
         </div>
-        <br />
+        <br/>
         <button
-          type="button"
-          class="generic_button"
-          id="join_button"
-          name="button"
-          onclick="joinRoom()"
+                type="button"
+                class="generic_button"
+                id="join_button"
+                name="button"
+                onclick="joinRoom()"
         >
-          Join
+            Join
         </button>
-      </div>
-      
-      <div class="wrapper_item" id="sidebar_right">
+    </div>
+
+    <div class="wrapper_item" id="sidebar_right">
         <div class="textbox">
-          <p style="text-align: center">Create a room!</p>
-          <p>
-            Name: <input type="text" id="create_room_input" />
-            <input
-              type="button"
-              value="Create"
-              class="generic_button"
-              id="button_create"
-              onclick="createRoom()"
-            />
-          </p>
-          <label for="points">Number of points to win: </label>
-          <select id="points">
-            <option value="5">5</option>
-            <option value="10">10</option>
-            <option selected="selected" value="15">15</option>
-            <option value="20">20</option>
-            <option value="30">30</option>
-            <option value="40">40</option>
-            <option value="50">50</option>
-          </select>
+            <p style="text-align: center">Create a room!</p>
+            <p>
+                Name: <input type="text" id="create_room_input"/>
+                <input
+                        type="button"
+                        value="Create"
+                        class="generic_button"
+                        id="button_create"
+                        onclick="createRoom()"
+                />
+            </p>
+            <label for="points">Number of points to win: </label>
+            <select id="points">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option selected="selected" value="15">15</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+            </select>
         </div>
-      </div>
-  </div>
-  
-    <script src="/js/index.js"></script>
-  </body>
+    </div>
+</div>
+
+<script src="/js/index.js"></script>
+</body>
 </html>
