@@ -1,6 +1,9 @@
 # KURI DRAWING
++ Video demo: https://youtu.be/94_cRXHb6cQ
+
 
 ![Kuri_Drawing.jpg](public/images/Kuri_Drawing.jpg)
+
 Kuri Drawing based on a real-time draw-and-guess game Scribble it!
 
 + A multiplayer game with socket.io, nodejs, Reactjs
